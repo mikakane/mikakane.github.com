@@ -4,9 +4,9 @@ db.json
 debug.log
 node_modules/
 public/
-.deploy/
+/.deploy/
+.sass-cache
 
 /.idea
 /bower_components
-/themes/apollo
-/themes/landscape
+/themes.bak/
