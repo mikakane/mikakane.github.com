@@ -1,0 +1,23 @@
+@import "../variables";
+@import "../libs/mixins";
+
+#pageAbout{
+  @include leftTie($themeColor);
+
+  .greet{
+    padding-left: 1em;
+  }
+  dd{
+    margin-bottom:.5em;
+  }
+  .map{
+    display: block;
+    width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2em;
+    margin-bottom:2em;
+  }
+
+}

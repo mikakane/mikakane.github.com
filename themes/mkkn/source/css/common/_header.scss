@@ -1,0 +1,39 @@
+// menu nabigation
+#commonHeader{
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 -15px;
+    height: 4em;
+    overflow: hidden;
+//    *{
+//      display: none;
+//    }
+    ::after{
+      content: "";
+      clear: both;
+      height: 0;
+      display: block;
+      visibility: hidden;
+    }
+    li{
+      display: block;
+      float: left;
+      margin-bottom: 1em;
+//      display: inline-block !important;
+      width: 20%;
+      height: 100%;
+      text-align: center;
+      a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin-top: 2em;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+
+

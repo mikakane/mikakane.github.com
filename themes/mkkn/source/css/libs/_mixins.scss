@@ -1,0 +1,10 @@
+@mixin leftTie($color){
+  h1,h2,h3,h4,h5,h6{
+    border-left: $color .2em solid;
+    padding-left: .5em;
+  }
+}
+
+@mixin fullWidth(){
+  margin: 0 -15px;
+}

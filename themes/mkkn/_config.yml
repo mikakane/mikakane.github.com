@@ -1,0 +1,71 @@
+# mkkn theme config
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+
+works:
+    business:
+      -
+        title: 都市ポータルサイト
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        span: 6ヶ月
+        play: 要求定義~実装
+        detail: |
+            都市部のマチ情報ポータルサイトとして独自CMSの制作にあたりました。
+            飲食店やブティック、イベント情報などの情報をまとめ、
+            一覧表示、検索表示、詳細表示する情報サイトです。
+            運用向けに店舗情報等を更新する管理画面等も合わせて納品させていただきました。
+      -
+        title: ポイントカードのログインサイト
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        span: 3ヶ月
+        play: 要求定義~実装
+        detail: |
+            ポイントカードのポイント残高等を確認するユーザサイトの制作にあたりました。
+            ログイン機能に加えポイント残高の照会や、ポイント特典の発行などの機能を持ったサイトです。
+            運用向けに、ユーザを一覧形式で確認する管理画面も合わせて納品させていただきました。
+      -
+        title: 自動車ローンの見積もりアプリ
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        span: 2ヶ月
+        play: 要求定義~実装
+        detail: |
+            自動車の分割支払い/リース等の発生金額を比較/見積もりできるアプリの制作にあたりました。
+      -
+        title: iPadを活用した電子カルテ
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        span: 3ヶ月
+        play: 要求定義~設計
+        detail: |
+            医療機関向けの研究開発案件として、iPadを用いた電子カルテアプリの制作にあたりました。
+    social:
+      -
+        title: スマホ向けノベルゲーム
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        detail: |
+            スマートフォン向けに展開するノベルゲームの新規開発を行いました。
+            企画定義から開発、運用提案などを行っております。
+      -
+        title: ソーシャルゲーム向けKPI等運用向けツール
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        detail: |
+            上記ソーシャルゲーム開発に関連して、KPIの分析や、リリース管理、
+            ユーザサポート等各種業務管理ツールの開発を行いました。
+      -
+        title: Gree向けカードゲームの性能改善
+        tags: ["HTML5","PHP","DATABASE","スマホ"]
+        span: 3ヶ月
+        play: 要求定義~実装
+        detail: |
+            Gree向けに展開するカードゲームアプリの性能改善を行いました。
+            現状のシステム分析から問題点の洗い出し、改善案の提案/実施を行っております。

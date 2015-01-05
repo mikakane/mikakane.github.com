@@ -1,0 +1,58 @@
+<%- partial('_partial/common/header') %>
+
+<div id="pageWork">
+    <h1>導入実績</h1>
+    <h2>ビジネス・ソリューション</h2>
+    <% for(var i = 0; i < theme.works.business.length; i++){ %>
+    <div class="item">
+        <% var item = theme.works.business[i] %>
+        <div class="title"><%- item.title %></div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="detail"><%- item.detail %></div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="tags">
+                    <% for(var j = 0; j < item.tags.length; j++){ %>
+                    <span class="tag"><%- item.tags[j]%></span>
+                    <% } %>
+                </div>
+                <% if(item.span){%>
+                <div>製作期間:<%-item.span%></div>
+                <% }%>
+                <% if(item.play){%>
+                <div>担当: <%-item.play%></div>
+                <% }%>
+            </div>
+        </div>
+    </div>
+    <% } %>
+    <h2>サービス/ソーシャルメディア</h2>
+    <% for(var i = 0; i < theme.works.social.length; i++){ %>
+    <div class="item">
+        <% var item = theme.works.social[i] %>
+        <p class="title"><%- item.title %></p>
+        <div class="row">
+            <div class="col-sm-8">
+                <p class="detail"><%- item.detail %></p>
+
+            </div>
+            <div class="col-sm-4">
+                <p class="tags">
+                    <% for(var j = 0; j < item.tags.length; j++){ %>
+                    <span class="tag"><%- item.tags[j]%></span>
+                    <% } %>
+                </p>
+                <% if(item.span){%>
+                <p>製作期間:<%-item.span%></p>
+                <% }%>
+                <% if(item.play){%>
+                <p>担当: <%-item.play%></p>
+                <% }%>
+            </div>
+        </div>
+    </div>
+    <% } %>
+</div>
+<%- partial('_partial/common/footer') %>

@@ -1,0 +1,113 @@
+@import "variables";
+@import "libs/mixins";
+
+@import "common/header";
+@import "common/footer";
+
+@import "page/works";
+@import "page/about";
+
+
+body{
+  background: #EAE6D6;
+  color:#555;
+}
+
+@media (min-width: 768px) {
+  .container{
+    width: 768px;
+  }
+}
+
+.in5{
+  padding:5px 1em;
+}
+
+#topContainer{
+  width: 100%;
+  max-width: 768px;
+  background: white;
+//  margin-left: auto;
+//  margin-right: auto;
+  margin: 0px auto 50px auto;
+}
+
+//TODO refactor below
+
+//[index] hero Unit
+.mkknHero{
+  @include fullWidth();
+//  margin: 0 -15px;
+  h1{
+    color: #aaa;
+    letter-spacing: 5px;
+    margin: 1em 1em .5em 1em;
+    font-weight: 100;
+  }
+  .heroImg{
+    width: 100%;
+    background: url('/img/hogehoge.jpg');
+    background-size: cover;
+    background-position-y: 32%;
+  }
+}
+
+// [index] brief unit
+.mkknBrief{
+  .logoArea{
+    text-align: center;
+    font-size:150%;
+    padding: 2em;
+    img{
+      display: inline-block;
+      width: 2em;
+    }
+  }
+  .skillList{
+    font-size: 1.5em;
+    span{
+      background: $themeColor;
+      font-weight: normal;
+    }
+  }
+}
+
+//[index] content unit
+.mkknContent{
+  @include leftTie($themeColor);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+
+//
+//
+//.mkknPanel{
+//  background: #fff;
+//  min-height: 320px;
+//  margin:2em 5px;
+//  padding:1em;
+//  @include borderedHeading($themeColor)
+//}
+//
+//.jisseki{
+//  .title{
+//    font-size:1.5em;
+//    padding:0 .5em;
+//    border-bottom: 1px solid #333;
+//  }
+//  .tags{
+//    padding:0 .5em;
+//    .tag{
+//      display: inline-block;
+//      background: $tagColor;
+//      padding:0 .5em;
+//      color: white;
+//      border-radius: 2px;
+//    }
+//  }
+//  .detail{
+//    padding:0 .5em;
+//  }
+//}

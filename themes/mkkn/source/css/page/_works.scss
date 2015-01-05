@@ -1,0 +1,38 @@
+@import "../variables";
+@import "../libs/mixins";
+
+#pageWork{
+  @include leftTie($themeColor);
+
+  .item{
+    margin: 2em 1em;
+    .title{
+      border-bottom: 1px solid #aaa;
+      padding-left: .5em;
+      font-size: 1.3em;
+    }
+    .tags{
+      margin-bottom: .5em;
+      .tag{
+        display: inline-block;
+        background: $tagColor;
+        padding: 0 1em;
+        margin: .2em;
+        color: white;
+      }
+    }
+    .detail{
+      padding-left: 1em;
+      padding-top: .5em;
+    }
+  }
+  .item::after{
+    content: "*";
+    color: "#ccc";
+    display: block;
+    text-align: center;
+  }
+  .item:last-child::after{
+    display: none;
+  }
+}
